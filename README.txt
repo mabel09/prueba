@@ -1,0 +1,1 @@
+Simplemente hay que modificar el settings.py con las rutas en la que se descomprimió esta aplicación y darle un nombre a la base de datos sqlite.

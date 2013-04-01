@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Mi Blog{% endblock %}
+{% block content %}
+    <h2>Entradas Recientes</h2>
+{% for entry in entries %}
+    <h3>{{entry.title}}</h3>
+    <h4>{{entry.date|date:"j/n/Y H:i"}}</h4>
+    {{entry.body}}
+{% endfor %}
+ <p><a href="/blog/newpost/">Agregar entrada</a></p>
+{% endblock %}
+
